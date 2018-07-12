@@ -1,3 +1,4 @@
 Django==1.11
 pytz==2018.5
 django-bootstrap4==0.0.6
+Pillow==5.2.0
