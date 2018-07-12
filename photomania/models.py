@@ -14,7 +14,6 @@ class Image(models.Model):
         self.save()
 
 
-
 class Location(models.Model):
     location = models.DecimalField(max_digits=9, decimal_places=6)
     image = models.ForeignKey(Image)
@@ -23,3 +22,5 @@ class Location(models.Model):
 class Category(models.Model):
     category = models.CharField(max_length = 50)
     image = models.ForeignKey(Image)
+
+    
