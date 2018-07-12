@@ -7,6 +7,13 @@ class Image(models.Model):
     name = models.CharField(max_length =50)
     description = models.TextField()
 
+    def __str__(self):
+        return self.name
+
+    def save_image(self):
+        self.save()
+
+    
 
 class Location(models.Model):
     location = models.DecimalField(max_digits=9, decimal_places=6)
