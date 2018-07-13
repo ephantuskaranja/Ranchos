@@ -3,13 +3,14 @@ from django.db import models
 # Create your models here.
 
 class Location(models.Model):
-    location = models.DecimalField(max_digits=9, decimal_places=6)
-
-
+    location = models.CharField(max_length = 50)
+    def __str__(self):
+        return self.location
 
 class Category(models.Model):
     category = models.CharField(max_length = 50)
-
+    def __str__(self):
+        return self.category
 
 
 class Image(models.Model):
