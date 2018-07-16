@@ -1,12 +1,31 @@
-{%extends 'photomania/base.html'%} {% block content %}
+{%extends 'photomania/base.html'%} {% load bootstrap4 %} {% block content %}
 <div class="container">
-  <h1> Welcome to Photomania!! </h1>
-  <div class="row">
-    <!-- displaying photomania images-->
-    {% for image in images %}
+  <h1> Welcome to Photomania!! </h1> {% for image in images %}
+  <img src="{{ image.image.url }}" class="img-responsive" alt="" data-toggle="modal" data-target="#{{ image.id }}"> {% endfor %} {% for image in images %}
+  <div class="modal fade" id="{{ image.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+        </div>
+        <div class="modal-body">
+          <img src="{{ image.image.url }}" alt="">
+        </div>
+        <div class="modal-footer">
+          <p>{{ image.image_name }}</p><br>
+          <p>{{ image_description }}</p><br>
+          <p>{{ image.location }}</p>
+          <p>{{ image.category }}</p>
 
-    <img src="{{ image.image.url }}" style="padding:5px;" class="img-responsive" alt="Image"> {% endfor %}
+        </div>
+      </div>
+    </div>
   </div>
 
+  {% endfor %}
 </div>
+<!-- Button to Open the Modal -->
 {% endblock %}
