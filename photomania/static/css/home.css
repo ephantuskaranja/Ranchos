@@ -6,9 +6,10 @@ h1
 
 }
 #ranchos{
-  color: black;
-  background-color:
+  color: blue;
+
 }
+
 #Image{
   width:250px;
   height: 400px;
@@ -20,19 +21,81 @@ h1
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
-
-
-
 }
+
+
 #image-place{
   text-align: center;
   image-orientation:
 }
 .container{
-  background-color: hsl(0, 100%, 30%);
+  /* background-color: hsl(0, 100%, 30%); */
   font-size: 15px;
   font-weight: 400;
   line-height: 1.6;
   color: #111;
   display: block;
+}
+
+#search-images{
+  text-align: center;
+  padding: 10px;
+  /* width:500px;
+  height:600px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+.navbar-inner {
+}
+.brand,
+.nav > li > a {
+}
+.brand:hover,
+.nav > li > a:hover {
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+}
+.nav .active > a,
+.nav .active > a:hover,
+.nav .active > a:focus {
+}
+.navbar-link {
+}
+.navbar-link:hover {
+}
+.divider-vertical {
+}
+.nav li.dropdown.open > .dropdown-toggle,
+.nav li.dropdown.active > .dropdown-toggle,
+.nav li.dropdown.open.active > .dropdown-toggle {
+}
+.nav li.dropdown > .dropdown-toggle .caret {
+}
+.nav li.dropdown.open > .dropdown-toggle .caret,
+.nav li.dropdown.active > .dropdown-toggle .caret,
+.nav li.dropdown.open.active > .dropdown-toggle .caret {
+}
+.navbar-search .search-query {
+}
+.navbar-search .search-query:-moz-placeholder {
+}
+.navbar-search .search-query:-ms-input-placeholder {
+}
+.navbar-search .search-query::-webkit-input-placeholder {
+}
+.navbar-search .search-query:focus,
+.navbar-search .search-query.focused {
+}
+.btn-navbar {
+}
+.btn-navbar:hover,
+.btn-navbar:active,
+.btn-navbar.active,
+.btn-navbar.disabled,
+.btn-navbar[disabled] {
 }

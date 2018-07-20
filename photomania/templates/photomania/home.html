@@ -9,7 +9,7 @@
   }
 </script>
 
-<div class="container">
+<div class="page-wrapper">
   <h1> Welcome to Photomania!! </h1> {% for image in images %}
   <div id='image-place'>
     <img src="{{ image.image.url }}" id="Image" class="col-md-3" alt="" data-toggle="modal" data-target="#{{ image.id }}"> {% endfor %} {% for image in images %}
