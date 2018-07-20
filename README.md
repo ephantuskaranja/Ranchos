@@ -17,6 +17,7 @@ This application is built on python Django framework. It is an application that 
     4. JavaScript
     5. Heroku
     6. Postgresql
+    7. Django
 
 ## Cloning Repository
   - Clone the Repo from here [https://github.com/ephantuskaranja/Ranchos.git]

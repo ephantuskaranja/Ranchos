@@ -10,6 +10,8 @@ class Location(models.Model):
         class Meta:
             ordering = ['location']
 
+    def save_location(self):
+        self.save()
 
 
 class Category(models.Model):
@@ -17,16 +19,25 @@ class Category(models.Model):
 
     def __str__(self):
         return self.category
+
         class Meta:
             ordering = ['category']
 
+    def save_category(self):
+        self.save()
+
+    def delete_category(self):
+        self.delete()
+
+
+
 
 class Image(models.Model):
-    image = models.ImageField(upload_to = 'images/')
+    image = models.ImageField(upload_to = 'images/', null=True, blank=True)
     name = models.CharField(max_length =50)
-    description = models.TextField()
-    location = models.ForeignKey(Location)
-    category = models.ForeignKey(Category)
+    description = models.TextField(max_length=255, null=True, blank=True)
+    location = models.ForeignKey(Location,  null=True, blank=True)
+    category = models.ForeignKey(Category,  null=True, blank=True)
 
     @classmethod
     def get_images(cls):
@@ -35,11 +46,16 @@ class Image(models.Model):
 
     def __str__(self):
         return self.name
+
         class Meta:
             ordering = ['name']
 
     def save_image(self):
         self.save()
+
+    def delete_image(self):
+        self.delete()
+
 
     @classmethod
     def searched_categories(cls, category):
