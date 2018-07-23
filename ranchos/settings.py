@@ -163,3 +163,7 @@ DATABASES['default'].update(db_from_env)
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 django_heroku.settings(locals())
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
