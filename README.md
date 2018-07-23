@@ -22,8 +22,12 @@ This application is built on python Django framework. It is an application that 
 ## Cloning Repository
   - Clone the Repo from here [https://github.com/ephantuskaranja/Ranchos.git]
 
+## Create a Virtual environment
+  -cd to the root directory of the app, open terminal then:
+  -use this command: virtualenv -p python3.6 virtual
+
 ## Install Dependencies
-  * Install dependancies that will create an environment for the app to run pip3 install -r requirements.txt
+  * Install dependancies that will create an environment for the app to run. pip install -r requirements.txt
 
 ## Create the Database
   * psql
