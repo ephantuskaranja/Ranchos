@@ -1,5 +1,5 @@
 # Ranchos
-### An application that shows news in different categories , July 13th, 2018.
+### An apllication built on django. Its a gallery app, July 13th, 2018.
 #### By **[Ephantus karanja](https://github.com/ephantuskaranja)**
 ## Description
 This application is built on python Django framework. It is an application that shows different pictures in two categories: Travel and Food. There a search button and pictures can be searched according to category, name or location recorded.
